@@ -1,0 +1,191 @@
+pcasm8.txt: Kayan noktalý olmayan ve olan tüm ASM komutlarý özeti.
+;---------------------------------------------------------------------------------------------------------------------
+; A.1 Non-floating Point Instructions
+; ADC Add with Carry
+; ADD Add Integers
+; AND Bitwise AND
+; BSWAP Byte Swap
+; CALL Call Routine
+; CBW Convert Byte to Word
+; CDQ Convert Dword to Qword
+; CLC Clear Carry
+; CLD Clear Direction
+; CMC Complement Carry
+; CMP Compare Integers
+; CMPSB Compare Bytes
+; CMPSW Compare Words
+; CMPSD Compare Dwords
+; CWD Convert Word to Dword into DX:AX
+; CWDE Convert Word to Dword into EAX
+; DEC Decrement Integer
+; DIV Unsigned Divide
+; ENTER Make stack frame
+; IDIV Signed Divide
+; IMUL Signed Multiply
+;INC Increment Integer
+; INT Generate Interrupt
+; JA Jump Above
+; JAE Jump Above or Equal
+; JB Jump Below
+; JBE Jump Below or Equal
+; JC Jump Carry
+; JCXZ Jump if CX = 0
+; JE Jump Equal
+; JG Jump Greater
+; JGE Jump Greater or Equal
+; JL Jump Less
+; JLE Jump Less or Equal
+; JMP Unconditional Jump
+; JNA Jump Not Above
+; JNAE Jump Not Above or Equal
+; JNB Jump Not Below
+; JNBE Jump Not Below or Equal
+; JNC Jump No Carry
+; JNE Jump Not Equal
+; JNG Jump Not Greater
+; JNGE Jump Not Greater or Equal
+; JNL Jump Not Less
+; JNLE Jump Not Less or Equal
+; JNO Jump No Overflow
+; JNS Jump No Sign
+; JNZ Jump Not Zero
+; JO Jump Overflow
+; JPE Jump Parity Even
+; JPO Jump Parity Odd
+; JS Jump Sign
+; JZ Jump Zero
+; LAHF Load FLAGS into AH
+; LEA Load Effective Address
+; LEAVE Leave Stack Frame
+; LODSB Load Byte
+; LODSW Load Word
+; LODSD Load Dword
+; LOOP Loop
+; LOOPE/LOOPZ Loop If Equal
+; LOOPNE/LOOPNZ Loop If Not Equal
+; MOV Move Data
+; MOVSB Move Byte
+; MOVSW Move Word
+; MOVSD Move Dword
+; MOVSX Move Signed
+; MOVZX Move Unsigned
+; MUL Unsigned Multiply
+; NEG Negate
+; NOP No Operation
+; NOT 1’s Complement
+; OR Bitwise OR
+; POP Pop From Stack
+; POPA Pop All
+; POPF Pop FLAGS
+; PUSH Push to Stack
+; PUSHA Push All
+; PUSHF Push FLAGS
+; RCL Rotate Left with Carry
+; RCR Rotate Right with Carry
+; REP Repeat
+; REPE/REPZ Repeat If Equal
+; REPNE/REPNZ Repeat If Not Equal
+; RET Return
+; ROL Rotate Left
+; ROR Rotate Right
+; SAHF Copies AH into FLAGS
+; SAL Shifts to Left
+; SBB Subtract with Borrow
+; SCASB Scan for Byte
+; SCASW Scan for Word
+; SCASD Scan for Dword
+; SETA Set Above
+; SETAE Set Above or Equal
+; SETB Set Below
+; SETBE Set Below or Equal
+; SETC Set Carry
+; SETE Set Equal
+; SETG Set Greater
+; SETGE Set Greater or Equal
+; SETL Set Less
+; SETLE Set Less or Equal
+; SETNA Set Not Above
+; SETNAE Set Not Above or Equal
+; SETNB Set Not Below
+; SETNBE Set Not Below or Equal
+; SETNC Set No Carry
+; SETNE Set Not Equal
+; SETNG Set Not Greater
+; SETNGE Set Not Greater or Equal
+; SETNL Set Not Less
+; SETNLE Set Not LEss or Equal
+; SETNO Set No Overflow
+; SETNS Set No Sign
+; SETNZ Set Not Zero
+; SETO Set Overflow
+; SETPE Set Parity Even
+; SETPO Set Parity Odd
+; SETS Set Sign
+; SETZ Set Zero
+; SAR Arithmetic Shift to Right
+; SHR Logical Shift to Right
+; SHL Logical Shift to Left
+; STC Set Carry
+; STD Set Direction Flag
+; STOSB Store Btye
+; STOSW Store Word
+; STOSD Store Dword
+; SUB Subtract
+; TEST Logical Compare
+; XCHG Exchange
+; XOR Bitwise XOR
+;
+; A.2 Floating Point Instructions
+; FABS ST0 = |ST0|
+; FADD src ST0 += src STn
+; FADD dest, ST0 dest += STO
+; FADDP dest [,ST0] dest += ST0
+; FCHS ST0 = -ST0
+; FCOM src Compare ST0 and src
+; FCOMP src Compare ST0 and src
+; FCOMPP src Compares ST0 and ST1
+; FCOMI src Compares into FLAGS
+; FCOMIP src Compares into FLAGS
+; FDIV src ST0 /= src
+; FDIV dest, ST0 dest /= STO
+; FDIVP dest [,ST0] dest /= ST0
+; FDIVR src ST0 = src /ST0
+; FDIVR dest, ST0 dest = ST0/dest
+; FDIVRP dest [,ST0] dest = ST0/dest
+; FFREE dest Marks as empty
+; FIADD src ST0 += src
+; FICOM src Compare ST0 and src
+; FICOMP src Compare ST0 and src
+; FIDIV src STO /= src
+; FIDIVR src STO = src / ST0
+; FILD src Push src on Stack
+; FIMUL src ST0 *= src
+; FINIT Initialize Coprocessor
+; FIST dest Store ST0
+; FISTP dest Store ST0
+; FISUB src ST0 -= src
+; FISUBR src ST0 = src - ST0
+; FLD src Push src on Stack
+; FLD1 Push 1.0 on Stack
+; FLDCW src Load Control Word Register
+; FLDPI Push n on Stack
+; FLDZ Push 0.0 on Stack
+; FMUL src ST0 *= src
+; FMUL dest, ST0 dest *= STO
+; FMULP dest [,ST0] dest *= ST0
+; FRNDINT Round ST0
+; FSCALE ST0 = ST0 x 2 ^ST1
+; FSQRT ST0 = (STO)^0.5
+; FST dest Store ST0
+; FSTP dest Store ST0
+; FSTCW dest Store Control Word Register
+; FSTSW dest Store Status Word Register
+; FSUB src ST0 -= src
+; FSUB dest, ST0 dest -= STO
+; FSUBP dest [,ST0] dest -= ST0
+; FSUBR src ST0 = src -ST0
+; FSUBR dest, ST0 dest = ST0-dest
+; FSUBP dest [,ST0] dest = ST0-dest
+; FTST Compare ST0 with 0.0
+; FXCH dest Exchange ST0 and dest
+;---------------------------------------------------------------------------------------------------------------------

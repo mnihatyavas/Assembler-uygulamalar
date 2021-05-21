@@ -1,0 +1,55 @@
+ÝÇÝNDEKÝLER (ASM ve C Kodlama örnekleri: 36 adet)
+===========================================
+P.A.Carter, PC Assembly Language
+
+1. Introduction:  Number Systems and Assembly Language
+    asm_io.asm: Diðer programlara %include asm_io.inc'le dahil edilen rutinlerin kodlanmasý örneði.
+    asm_io.inc: Diðer programlara %include ile dahil edilecek okuma-yazma rutinleri örneði.
+    cdecl.h: Standart C/C++ fonksiyonlarýnýn çaðrýlma yöntemini belirten makro tanýmlarý örneði.
+    pcasm.c: Ýlk ASM programýný çaðýracak olan sürücü C programý örneði.
+    pcasm1a.asm: Girilen iki tamsayýnýn toplamýnýn sunulmasý örneði.
+    pcasm1b.asm: Tüm ASM programlarda kullanýlacak iskelet yapý örneði.
+
+2. Basic Assembly Language
+    pcasm2a.asm: Tamsayý çarpma ve bölmeler örneði.
+    pcasm2b.c: Belirtilen üstLimite kadarki asal sayýlarý hesaplayan C örneði.
+    pcasm2b.asm: Girilen üst limite kadar olan asal sayýlarý dökümleme örneði.
+
+3. Bit Operations
+    pcasm3.asm: Girilen iki sayýdan büyüðünü, þartlý dallanmasýz saptayan örnek.
+
+4. Subprograms
+    pcasm4a.asm: Altprogramlarla iki tamsayýnýn toplamýnýn hesaplanmasý örneði.
+    pcas4b.asm: Altprogramlardan otomatik call-pusha/ret-popa ile dönülmesi örneði.
+    pcasm4c.asm: Girilen çoklu tamsayýlarýn toplamýný sunan altprogramlar örneði.
+    pcasm4d.asm: Girilen tamsayýlarýn toplamýnýn hesaplandýðý ASM çaðýran program örneði.
+    pcasm4dx1.asm: Tamsayý verigiriþleri ve toplamýn yazdýrýldýðý altprogram örneði.
+    pcasm4e.asm: 1'den n'e tamsayýlarýn toplamýný hesaplama örneði.
+    pcasm4e.c: Bir'den n'e kadar olan tamsayýlarýn toplamý C çaðýran program örneði.
+    pcasm4f.asm: 1'den n'e tamsayýlarýn toplamýný hesaplama örneði.
+    pcasm4f.c: Bir'den n'e kadar olan tamsayýlarýn toplamý C çaðýran program örneði.
+    pcasm4g.asm: Girilen n'in faktöryelini hesaplama örneði.
+    pcasm4g.c: Bir'den n'e kadar olan tamsayýlarýn faktöryeli C çaðýran program örneði.
+
+5. Arrays
+    pcasm5a.asm: Yüzlük tersten sýralý tamsayýlarýn istenen elemanýný ve onluk içeriðini gösterme örneði.
+    pcasm5a.c: Dizi elemanlarýný görüntüleyen asm'nin sürücüsü C çaðýran program örneði.
+    pcasm5b.asm: Girilen karakteri cümlede arama ve dizge uzunluðunu hesaplama örneði.
+    pcasm5b.c: Girilen karakteri ve dizgeyi asm altprogramlarda iþleme C örneði.
+
+6. Floating Point
+    pcasm6a.asm: Çift köklü denklem çözümü örneði.
+    pcasm6a.c: Ýki köklü denklemin çözümü C çaðýran program örneði.
+    pcasm6b.asm: Girilen azami 100 ondalýk sayýyý, altalta dökümleme örneði.
+    pcasm6b.c: Klavyeden girilen ondalýk sayýlarý altalta sunan C örneði.
+    pcasm6c.asm: Belirtilen adet baþtan asal sayýlarý listeleme ASM örneði.
+    pcasm6c.c: Belirtilen adet baþtan asal sayýlarý listeleme C örneði.
+
+7. Structures and C++
+    pcasm7.asm: Büyük tamsayý toplama ve çýkarma ASM altprogram örneði.
+    pcasm7.hpp: C++ dilinde kodlanmýþ Büyük sýnýf nesnesi taným örneði.
+    pcasm7a.cpp: Büyük sýnýf nesnesiyle c=a+b büyük tamsayý toplamý C++ örneði.
+    pcasm7b.cpp: Büyük sýnýf nesnesi yaratýp program çalýþmasýný test eden C++ örneði.
+
+8. Non-floating and Floating Point Instructions
+    pcasm8.txt: Kayan noktalý olmayan ve olan tüm ASM komutlarý özeti.
