@@ -1,0 +1,29 @@
+nasm32 iþlenmiþ örnekleri (26 adet)
+==============================
+
+nasm001a.asm: Merhaba dünya mesajýnýn dos penceresinden yansýtýlmasý örneði.
+nasm001b.c: Merhaba dünya mesajýnýn dos penceresinden yansýtýlmasý C örneði.
+nasm001c.asm: Tutorialspoint.com ile merhaba örneði.
+nasm001d.asm: Dosya yazma rutiniyle merhaba dünya örneði.
+nasm001e.asm: C kütüphanesiz, kernel32.dll ile merhaba dünya örneði.
+nasm002.asm: Ýlk 40 fibonaki serisini hesaplayýp yazdýrma örneði.
+nasm003.asm: Ana program C'den argümanlar alarak çaðrýlan fonksiyon sonucunu döndürme örneði.
+nasm003.c: Assembler programýndaki fonksiyonun C'den çaðrýlmasý örneði.
+nasm004.asm: Komut satýrý kelimelerini ekrana altalta yansýtan örnek.
+nasm005.asm: Komut satýrýndan girilen tamsayý x^y sonucunu veren örnek.
+nasm006.asm: Komut satýrýndan girilecek deðerlerin ortalamasýný bulma örneði.
+nasm007.asm: Altalta 2^0'den 2^31'e üslü sonuçlarý dökümleyen örnek.
+nasm008.asm: Mesaj ve çoklu yýldýzlarý altalta yazdýrma örneði.
+nasm009.asm: Win32 mesaj kutusuyla programdan çýkýþýn onaylanmasý örneði.
+nasm010.asm: Harici dosya rutinleriyle ekrana mesaj yansýtma örneði.
+nasm011.asm: Boþ bir windows penceresi yaratma örneði.
+nasm012.asm: C'den gönderilen tamsayýnýn faktöriyelini hesaplayýp döndürme örneði.
+nasm012.c: Verilen bir tamsayýnýn faktöriyelini hesaplama C çaðýran program örneði.
+nasm013.asm: Ekrana verilen mesajý yazdýran örnek.
+nasm013.c: Assembler'da mesaj yazdýrma C çaðýrma anaprogramý örneði.
+nasm014.asm: Ekrandan girilen 2 tamsayýnýn toplamýný yazdýran örnek.
+nasm014.c: Klavyeden girilen 2 tamsayýyý toplayan C örneði.
+nasm05.asm: Komut satýrýndan girilen 2 tamsayýnýn toplamýný yansýtma örneði.
+nasm015.c: Komut satýrýndan girilen 2 tamsayýnýn toplamýný veren C örneði.
+nasm016.asm: Veri kýsmýndan girilen ondalýk sayýlarýn çýktýsýný yansýtma örneði.
+nasm017.asm: 16 haneli 2 hex sayýnýn toplamýný yansýtma örneði.
