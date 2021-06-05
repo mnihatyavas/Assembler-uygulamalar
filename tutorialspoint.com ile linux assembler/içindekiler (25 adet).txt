@@ -1,0 +1,50 @@
+ÝÇÝNDEKÝLER ( 25 adet)
+====================================================
+1 - Home
+2 - Introduction
+3 - Environment Setup
+4 - Basic Syntax
+    tut01.asm: Merhaba linux nasm assemler örneði.
+5 - Memory Segments
+    tut02.asm: Bölüm adý section yada segment örneði.
+6 - Registers
+    tut03.asm: Dokuz adet * yazdýrma örneði.
+7 - System Calls
+    tut04.asm: Klavyeden girilen sayýlarýn ekranda yansýtýlmasý örneði.
+8 - Addressing Modes
+    tut05.asm: Orijinal ve deðiþtirilen isim'in yazdýrýlmasý örneði.
+9 - Variables
+    tut06.asm: Kernel yazdýrma çaðrýsýnda kullanýlan 4 kayýtçý örneði.
+    tut07.asm: Ekrana 1000 adet ardýþýk yýldýz yazdýrma örneði.
+10 - Constants
+    tut08.asm:  EQU tanýmlý sabitlerle ekrana mesajlar yazdýrma örneði.
+11 - Arithmetic Instructions
+    tut09.asm: Klavyeden girilen 2 sayýnýn toplamýný yazdýrma örneði.
+    tut10.asm: Kodlamayla girilen 2 sayýnýn toplamýný yazdýrma örneði.
+    tut11.asm: Kodlamalý 2 sayýnýn çarpým sonucunun ekrana yazdýrýlmasý örneði.
+    tut12.asm: Kodlamalý 2 sayýnýn bölüm sonucunun ekrana yazdýrýlmasý örneði.
+12 - Logical Instructions
+    tut13.asm: Kodlamayla girilen sayýnýn çift/tek-sayý olduðunun AND'le tespiti örneði.
+    tut14.asm: Verili iki sayýnýn OR sonucu örneði.
+13 - Conditions
+    tut15.asm: Kodlamalý üç sayýdan enbüðünün bulunmasý örneði.
+14 - Loops
+    tut16.asm: Ekrana 0,1,2,3,4,5,6,7,8,9 yazma örneði.
+15 - Numbers
+    tut17.asm:  AAS ile çýkarma sonucunu sayýsaldan ascii'ye çevirme örneði.
+    tut18.asm: Beþer haneli iki sayýnýn toplamý örneði.
+16 - Strings
+17 - Arrays
+    tut19.asm: On elemanlý dizi sayýlarýnýn toplamýný gösterme örneði.
+18 - Procedures
+    tut20.asm: Ýki sayýyý toplayýp döndüren altrutin örneði.
+    tut21.asm: Ascii 256 karakterleri ardýþýk þekilde altrutine yazdýrma örneði.
+19 - Recursion
+    tut22.asm: Kendini dolaylý çaðýran altrutinle faktöryel hesabý örneði.
+20 - Macros
+    tut23.asm: Mesaj ve uzunluðu girilen iki parametreli ekrana yazdýrma makro tanýmý örneði.
+21 - File Management
+    tut24.asm: Disk dosyasý yarat, aç, yaz, oku, kapat, ekrana yansýt örneði.
+22 - Memory Management
+    tut25.asm: Assembler kullanýmýna hatasýz enyüksek belleði tahsis etme örneði.
+23 - Quick Guide
