@@ -1,0 +1,84 @@
+asmtutor.com ile linux nasm içindekiler (37 adet)
+=======================================
+(NOT: Çevrimiçi NASM Linux derleyici sunucusu: https://www.jdoodle.com/compile-assembler-nasm-online/
+Ancak, programlarýn .exe'lerini vermediði, genelde klavye giriþi veya komut satýrýndan argüman giriþi yapýlamadýðýndan,
+ayrýca dosya yaratma, soket kurma imkanlarýnýz olmadýðýndan, kendi NASM, LD, GCC derleyici/baðlayýcýnýz yoksa
+bu örnekler tam olarak test edilemiyor. Dünyada, çevrimiçi, include veya harici çoklu C, CPP, ASMkarma dosyalar
+kullanacaðýnýz, klavye, komut satýrý argümanlarý gireceðiniz, elde edilen .exe'leri alabileceðiniz hiçbir sunucu sit yok,
+olanlar çok basit ve sadece reklam için varlar, öðreniciye iþe yarar yardýmcý olmak için deðil!..)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Hello, world!
+    asmtutor01.asm: Kernel çaðrýsý için ilk 4 kayýtçýlarýn kullanýmý örneði.
+2. Proper program exit
+    asmtutor02.asm: Programý hatasýz sonlandýrma örneði.
+3. Calculate string length
+    asmtutor03.asm: Dizge uzunluðunu programa hesaplattýrma örneði.
+4. Subroutines
+    asmtutor04.asm: Yazdýrýlacak mesaj uzunluðunun altrutinde hesaplanmasý örneði.
+5. External include files
+    asmtutor05.asm: Sýk kullanýlan altrutinlerin haricidosyasýný anaprograma dahiletme örneði.
+    asmtutor05x.asm: Diðer programlara dahiledilecek altrutinler örneði.
+6. NULL terminating bytes
+    asmtutor06.asm: Mesaj sonlarýna ascii 0/null byte'ýnýn eklenmesi örneði.
+7. Linefeeds
+    asmtutor07.asm: Altsatýrsýz ve altsatýrlý yaz/yazAS altrutinleri kullanma örneði.
+8. Passing arguments
+    asmtutor08.asm: Altrutin çaðýrma esnasýnda geçirilen argümanlarýn kontrolu örneði.
+9. User input
+    asmtutor09.asm: Klavyeden girileni ekrandan yansýtma örneði.
+10. Count to 10
+    asmtutor10.asm: Rakamýn ascii tablo karakter karþýlýðýný yazdýrma örneði.
+11. Count to 10 (itoa)
+    asmtutor11.asm: 1001 tamsayýyý böl10=kalan+ascii48'le altsatýrsýz yazdýrma örneði.
+12. Calculator - addition
+    asmtutor12.asm:  Ýki kayýtçýdaki tamsayýlarýn toplanýp ekrana yansýtýlmasý örneði.
+13. Calculator - subtraction
+    asmtutor13.asm:  Ýki kayýtçýdaki tamsayýlarýn farkýnýn ekrana yansýtýlmasý örneði.
+14. Calculator - multiplication
+    asmtutor14.asm:  Ýki kayýtçýdaki tamsayýlarýn çarpýýnýn ekrana yansýtýlmasý örneði.
+15. Calculator - division
+    asmtutor15.asm:  Ýki kayýtçýdaki tamsayýlarýn bölümünün ekrana yansýtýlmasý örneði.
+16. Calculator (atoi)
+    asmtutor16.asm:  Klavyeden girilen çoklu tamsayýlarýn toplamlarý örneði.
+17. Namespace
+    asmtutor17.asm: Yerel ve global etiket adlarý örneði.
+18. Fizz Buzz
+    asmtutor18.asm: Ýlk 100 sayýdaki üçe, beþe, hem üç hem beþe bölünenlerin tespiti örneði.
+19. Execute Command
+    asmtutor19.asm: SYS_EXECVE ile komut  ve argümanlarý çalýþtýþtýrma örneði.
+20. Process Forking
+    asmtutor20.asm: SYS_FORK ile çatallaþan ebeveyn veya çocuk iþlemleri örneði.
+21. Telling the time
+    asmtutor21.asm: SYS_TIME ile 1.1.1970'den beri geçen saniyeler örneði.
+22. File Handling - Create
+    asmtutor22.asm: SYS_CREAT ile disk üzerinde metin dosyasý yaratma örneði.
+23. File Handling - Write
+    asmtutor23.asm: SYS_WRITE ile yratýlan disk dosyasýna kayýt yazýlmasý örneði.
+24. File Handling - Open
+    asmtutor24.asm: SYS_OPEN ile yratýlan disk dosyasýnýn açýlmasý örneði.
+25. File Handling - Read
+    asmtutor25.asm: SYS_READ ile açýlan disk dosyasýndaki mevcut kaydýn okunmasý örneði.
+26. File Handling - Close
+    asmtutor26.asm: SYS_CLOSE ile içeriði okunan disk dosyasýnýn kapatýlmasý örneði.
+27. File Handling - Update
+    asmtutor27.asm: SYS_LSEEK ile mevcut dosya içerik konumunda güncelleme örneði.
+28. File Handling - Delete
+    asmtutor28.asm: SYS_UNLINK ile mevcut disk dosyanýn silinmesi örneði.
+29. Sockets - Create
+    asmtutor29.asm: SYS_SOCKETCALL ile sunucu-kullanýcý soketi yaratma örneði.
+30. Sockets - Bind
+    asmtutor30.asm: SYS_SOCKETCALL ile yaratýlan soketi IP-adres ve sunucuya baðlama örneði.
+31. Sockets - Listen
+    asmtutor31.asm: SYS_SOCKETCALL ile yaratýlan ve baðlanan sokete gelen TCP taleplerini dinleme örneði.
+32. Sockets - Accept
+    asmtutor32.asm: SYS_SOCKETCALL ile yaratýlan, baðlanan, dinleyen soketin gelen TCP taleplerini kabul örneði.
+33. Sockets - Read
+    asmtutor33.asm: SYS_SOCKETCALL ile yaratýlan, baðlanan, dinleyen, kabuleden kullanýcýnýn okumasý örneði.
+34. Sockets - Write
+    asmtutor34.asm: SYS_SOCKETCALL ile yaratýlan, baðlanan, dinleyen, kabuleden, okuyan soketin yazmasý örneði.
+35. Sockets - Close
+    asmtutor35.asm: SYS_SOCKETCALL ile yaratýlan, baðlanan, dinleyen, kabuleden, okuyan, yazan soketin kapatýlmasý örneði.
+36. Download a Webpage
+    asmtutor36.asm: SYS_SOCKETCALL ile uzak aðsunucuyla birleþip aðsayfasýný indirme örneði.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
