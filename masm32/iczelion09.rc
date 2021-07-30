@@ -1,0 +1,18 @@
+; iczelion09.rc: Selam ve göster menü seçenekleri tanýmlama alt-örneði.
+
+#define SELAM 1
+#define SiL 2
+#define GOSTER 3
+#define CIK 4
+
+DuzenMenusu MENU
+{
+    POPUP "&Metin Düzenleyici"
+    {
+         MENUITEM "Selamla", SELAM
+         MENUITEM "Düzenleyici Kutu Ýçeriðini Sil", SiL
+         MENUITEM "Düzenlenen Metni Göster", GOSTER
+         MENUITEM SEPARATOR
+         MENUITEM "&Çýk", CIK
+    }
+}

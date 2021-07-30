@@ -1,0 +1,35 @@
+; iczelion10a.rc: Diyalog ve menü seçeneklerinin tanýmlarý alt-örneði.
+
+/* .ASM ve .RC'deki sabit adlarýnýn ayný olmasý gerekmez, deðer eþitliðive her programda kendi sabitlerinin kullanýmý yeterlidir. */
+
+#include "iczelion10.h"
+
+#define IDC_EDIT 11
+#define IDC_BUTTON 12
+#define IDC_EXIT 13
+
+#define IDM_GETTEXT 21
+#define IDM_CLEAR 22
+#define IDM_EXIT 23
+
+BenimDiyalog DIALOG 10, 10, 250, 60
+STYLE 0x0004 | DS_CENTER | WS_CAPTION | WS_MINIMIZEBOX |
+    WS_SYSMENU | WS_VISIBLE | WS_OVERLAPPED | DS_MODALFRAME | DS_3DLOOK
+CAPTION "Ýlk Diyalog Kutumuz"
+CLASS "DLGCLASS"
+BEGIN
+    EDITTEXT IDC_EDIT,   15, 17, 150, 13, ES_AUTOHSCROLL | ES_LEFT | WS_TABSTOP
+    DEFPUSHBUTTON   "Selamla", IDC_BUTTON,    180, 10, 52, 13
+    PUSHBUTTON  "&Çýkýþ", IDC_EXIT,  180, 26, 52, 13
+END
+
+BenimMenu  MENU
+BEGIN
+    POPUP "Pencere &Menüsü"
+    BEGIN
+        MENUITEM "Metni dýþarý çýkar", IDM_GETTEXT
+        MENUITEM "Metni sil", IDM_CLEAR
+        MENUITEM "", , 0x0800 /* MFT_SEPARATOR */
+        MENUITEM "&Çýkýþ", IDM_EXIT
+    END
+END

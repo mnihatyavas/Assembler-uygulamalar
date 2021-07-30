@@ -2,15 +2,30 @@ iczelion ile masm32assembler ÝÇÝNDEKÝLER (adet)
 =================================================
 1. The Basic
 2. Message Box
-    iczelion01.asm: Win32 pencereden mesaj yazdýrma örneði.
+    iczelion02.asm: Win32 pencereden mesaj yazdýrma örneði.
 3. A Simple Window
+    iczelion03.asm: Basit ve boþ bir windows pencere yaratma örneði.
 4. Painting with Text
+    iczelion04.asm: Yaratýlan pencereye metin boyama örneði.
 5. More about Text
+    iczelion05.asm: Yaratýlan grafik pencereye renkli ve yazýfonlu metin boyama örneði.
 6. Keyboard Input
+    iczelion06.asm: Klavyeden girilen karakterin pencereden özel yazýfonlu yansýtýlmasý örneði.
 7. Mouse Input
+    iczelion07.asm: Farenin týklandýðý pencere konumuna mesaj yazdýrma örneði.
 8. Menu
+    iczelion08a.asm: Menü (Selam, Veda, Çýkýþ) ve Deneme zýplayan menü seçenekleri örneði.
+    iczelion08a.rc: Menü, seçenekleri ve duyarlý karakterler alt-örneði.
+    iczelion08b.asm: Menü (Selam, Veda, Çýkýþ) ve Tanýt zýplayan menü seçenekleri örneði.
+    iczelion08b.rc: Menü, seçenekleri ve duyarlý karakterler alt-örneði.
 9. Child Window Control
+    iczelion09.asm: Hazýr selamý yada girilen metni buton týklayarak mesaj kutusunda gösterme örneði.
+    iczelion09.rc: Selam ve göster menü seçenekleri tanýmlama alt-örneði.
 10. Dialog Box as Main Window
+    iczelion10a.asm: Menü penceresi ve baðýmsýz diyalog penceresinin uyumluluðu örneði.
+    iczelion10a.rc: Diyalog ve menü seçeneklerinin tanýmlarý alt-örneði.
+    iczelion10b.asm: Sadece baðýmsýz diyalog penceresi metodu örneði.
+    iczelion10b.rc: Diyalog ve menü seçenekleri tanýmý alt-örneði.
 11. More about Dialog Box
 12. Memory Management and File IO
 13. Memory Map Files

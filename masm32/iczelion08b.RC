@@ -1,0 +1,27 @@
+; iczelion08b.rc: Menü, seçenekleri ve duyarlý karakterler alt-örneði.
+
+#define ADSOYAD 21
+#define TELEFON 22
+#define EPOSTA 23
+#define SELAM 11
+#define VEDA 12
+#define SON 19
+#define YARDIM 3
+
+BenimMenum MENU
+{
+    POPUP "Zýplayan &Menü"			; Alt-M/m harfe duyarlý
+    {
+        MENUITEM "&Selam verme", SELAM	; S/s'ye duyarlý
+        MENUITEM "&Vedalaþma", VEDA		; V/v'ye duyarlý
+        MENUITEM SEPARATOR		; Yatay çizgili boþ satýrlý ayraç
+        MENUITEM "&Çýkýþ", SON		; Ç/ç'ye duyarlý
+    }
+    POPUP "Taný&þma"			; Alt-Þ/þ'ye duyarlý
+    {
+        MENUITEM "&Ad ve soyadým", ADSOYAD	; A/a'ye duyarlý
+        MENUITEM "Telefon &numaram", TELEFON	; N/n'ye duyarlý
+        MENUITEM "&Eposta adresim", EPOSTA	; E/e'ye duyarlý
+    }
+    MENUITEM "&Yardým", YARDIM		; Y/y'ye duyarlý
+}

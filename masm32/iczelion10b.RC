@@ -1,0 +1,35 @@
+; iczelion10b.rc: Diyalog ve menü seçenekleri tanýmý alt-örneði.
+
+#include "iczelion10.h"
+
+#define D_MENU 10
+#define D_DUZELT 11
+#define D_DUGME 12
+#define D_CIK 13
+
+#define M_CIKAR 21
+#define M_SIL 22
+#define M_CIK 23
+
+BenimDiyalogum  DIALOG 10, 10, 250, 60
+STYLE 0x0004 | DS_CENTER | WS_CAPTION | WS_MINIMIZEBOX |
+WS_SYSMENU | WS_VISIBLE | WS_OVERLAPPED | DS_MODALFRAME | DS_3DLOOK
+CAPTION "Our Second Dialog Box"
+MENU D_MENU
+BEGIN
+    EDITTEXT D_DUZELT,   15,17,150,13, ES_AUTOHSCROLL | ES_LEFT
+    DEFPUSHBUTTON   "Selamla", D_DUGME,    190,10,52,13
+    PUSHBUTTON      "&Çýk", D_CIK,  190,26,52,13
+END
+
+D_MENU  MENU
+BEGIN
+    POPUP "Diyalog &Menüsü"
+    BEGIN
+        MENUITEM "Metni dýþarý çýkar", M_CIKAR
+        MENUITEM "Metni sil", M_SIL
+        MENUITEM "", , 0x0800 /*MFT_SEPARATOR*/
+        MENUITEM "&Çýk", M_CIK
+    END
+END
+
